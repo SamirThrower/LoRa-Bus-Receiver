@@ -41,7 +41,7 @@ const NamedLocation LOCATIONS[] = {
     {"Hillside",     42.087, -75.978},
     {"Mountainview", 42.0840,   -75.9703},
     {"Hinman", 42.0881, -75.9727},
-    {"EB", 42.0868, -75.9682},
+    {"Engineering Building", 42.0868, -75.9682},
     {"Dickinson", 42.0873, -75.9648},
     {"Newing", 42.0884, -75.9628},
     {"Cooper", 42.0896, -75.9658},
