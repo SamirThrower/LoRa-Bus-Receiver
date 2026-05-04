@@ -29,10 +29,10 @@
 // ----- LoRa config — must match V3 receiver exactly -----
 #define FREQUENCY     915.0   // MHz  (change to 868.0 for EU)
 #define BANDWIDTH     125.0   // kHz
-#define SPREAD_FACTOR 7
+#define SPREAD_FACTOR 12
 #define CODING_RATE   5
 #define SYNC_WORD     0x12
-#define TX_POWER      14      // dBm
+#define TX_POWER      20      // dBm
 #define PREAMBLE_LEN  8
 
 // ----- Transmit interval -----

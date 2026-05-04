@@ -23,10 +23,10 @@
 // ----- LoRa config — must match V4 transmitter exactly -----
 #define FREQUENCY     915.0
 #define BANDWIDTH     125.0
-#define SPREAD_FACTOR 7
+#define SPREAD_FACTOR 12
 #define CODING_RATE   5
 #define SYNC_WORD     0x12
-#define TX_POWER      14
+#define TX_POWER      20
 #define PREAMBLE_LEN  8
 
 // ----- Known GPS locations -----
@@ -38,8 +38,8 @@ struct NamedLocation {
 
 // Fill in real coordinates for Mountainview and EB.
 const NamedLocation LOCATIONS[] = {
-    {"Hillside",     42.087, -75.978},
-    {"Mountainview", 42.0840,   -75.9703},
+    {"Hillside", 42.0871, -75.9782},
+    {"Mountainview", 42.0840, -75.9703},
     {"Hinman", 42.0881, -75.9727},
     {"Engineering Building", 42.0868, -75.9682},
     {"Dickinson", 42.0873, -75.9648},
@@ -47,7 +47,7 @@ const NamedLocation LOCATIONS[] = {
     {"Cooper", 42.0896, -75.9658},
     {"East Gym", 42.0909, -75.9674},
     {"Welcome Center", 42.0931, -75.9685},
-    {"West Gym", 42.0931, -75.9712},
+    {"West Gym", 42.0917, -75.9712},
     {"Physical Facilities", 42.0916, -75.9740},
     {"Clearview", 42.0890, -75.9755},
     {"Susquehanna", 42.08625, -75.9744},
@@ -56,8 +56,8 @@ const NamedLocation LOCATIONS[] = {
 const int NUM_LOCATIONS = sizeof(LOCATIONS) / sizeof(LOCATIONS[0]);
 
 // Receiver is located at Hillside
-const float RECEIVER_LAT = 42.087;
-const float RECEIVER_LON = -75.978;
+const float RECEIVER_LAT = 42.0871;
+const float RECEIVER_LON = -75.9782;
 
 // ----- OLED -----
 U8G2_SSD1306_128X64_NONAME_F_SW_I2C display(
